@@ -1,0 +1,58 @@
+//JADE//CATEGORY//MODALS//
+
+#modalFSSC.fssc.modalBox
+	#heading New Category Feature
+	#content
+	
+		input#fsscAdd(placeholder='Type FSSC Code You Wish To Add Here', tabindex='1')
+		button.btn#createFSSC(tabindex='2') Create
+
+		#fsscConfirmation
+			label Are you sure you want to create this?
+			button.btn.btn-success#createFSSC_y Yes
+			button.btn.btn-danger#createFSSC_n No
+
+		h2 Current Codes:
+		ul.fsscList
+
+#modalConfig.options.modalBox
+	#heading Edit Feature
+	#content
+	
+		h1#cat_fssc
+
+		ul
+			li
+				i.icon-link
+				input#cat_link(type='text', placeholder='Link')<br/>
+			li
+				i.icon-camera-retro
+				input#cat_img(type='text', placeholder='Image Path')
+		
+		// form(action="...", method="post", enctype="multipart/form-data")
+		// 	input(type="file", name="displayImage", value="Upload Image")
+		
+		button.btn.classB#saveCatConf Save
+		#configUpdate
+			label Saved!
+#modalAddMap.modalBox
+	#heading Add Image Map
+	#content
+		#previewCanvas
+			canvas
+		#mapTools
+				button.mapTool#mapPoly
+				button.mapTool#mapRect
+				button.mapTool#mapDelete
+				button.btn.classB#saveMap Save Map
+
+		#productSelector
+			ul
+				li Product 1
+				li Product 2
+				li Product 3
+				li Product 4
+				li Product 5
+				li Product 6
+				li Product 7
+				li Product 8

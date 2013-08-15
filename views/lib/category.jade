@@ -1,0 +1,28 @@
+//JADE//CATEGORY//PAGE//
+
+extend layout-page
+block content
+	//a.btn.btn-primary.btn-large#next Next
+	.row
+		include categoryModal
+		
+		#designWrapper
+			.span6#director
+				.fsscContainer
+				.ui-widget
+					label(for='tags')
+						input#fsscSearch(placeholder='Search by keyword', tabindex='3')
+				button.classA#render(tabindex='4')
+					i.icon-chevron-right
+				button.btn.classA#modalFSSCButton(tabindex='5')
+					i.icon-plus
+				button.btn.classA#export(tabindex='6')
+					i.icon-upload-alt
+
+			.span3#leftNav
+				include leftNav
+			.span6#design
+				.span6#board
+			.span3#categoryAttributes
+				include categoryAttributes
+	.helpBox Welcome!

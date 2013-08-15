@@ -1,0 +1,14 @@
+extend layout-simple
+block content
+	.container
+		form( method="post").form-signin
+			h2.form-signin-heading !{locals.message}
+			input.input-block-level(type='text', placeholder='Username', name="username").required
+			input.input-block-level(type='password', placeholder='Password', name="password").required
+			if fail
+				div.alert.alert-error Wrong Username or Password
+			label.checkbox
+				input(type='checkbox', value='remember-me')
+				| Remember me
+			button.btn.btn-large.btn-primary(type='submit') Sign in
+			
