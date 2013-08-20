@@ -1,0 +1,33 @@
+/* SCAFFOLDING
+   ==================================================
+   ================================================== */
+body { background: #fff }
+@font-face {
+    font-family: "Scout";
+    src: url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-2.eot");
+    src: local('☺'), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-3.woff") format("woff"), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-1.ttf") format("truetype"), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+a:hover {
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+
+#nav-header{
+    background-color: orange;
+    background-image: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+#nav-header > *{
+    padding: .25em;
+}
