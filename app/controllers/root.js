@@ -2,15 +2,8 @@ exports.serve = function (req, res) {
 
 	var http = require('http');
 
-	res.render('root', {
-		title:'Root of animated-octo-dangerzone.',
-		include:
-			{
-				header: true,
-				navigation: true,
-				root: true,
-				footer: true
-			}
+	res.render('components/root', {
+		title:'Root of animated-octo-dangerzone.'
 	});
 }
 
