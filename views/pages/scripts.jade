@@ -1,15 +1,14 @@
 //JADE//SCRIPTS//
 
 //css
-//link(rel='stylesheet', href='/css/style.css')
-link(rel='stylesheet', href='/css/site.css')
-//link(rel='stylesheet', href='/css/prettify.css')
-link(rel='stylesheet', href='/css/bootstrap.css')
-link(rel='stylesheet', href='/css/font-awesome_v3.1.0.css')
-link(rel='stylesheet', href='/css/jquery-ui-1.10.2.custom.css')
-link(rel='stylesheet', href='/css/datepicker.css')
+link(rel='stylesheet', href='/css/styles.css')
 
-//link(rel='stylesheet', href='/css/jquery.multiselect.filter.css')
-//teh js
-script(data-main='/js/main', src='/js/require.js')
-script(src='/js/html5.js')
+//requireJS
+script(type='text/javascript', data-main='/js/main', src='/js/require.js')
+
+//jQuery (necessary for Bootstrap's JavaScript plugins) 
+script(type='text/javascript', src='/frameworks/jquery-1.10.2/jquery-1.10.2.min.js')
+
+//mozilla brick
+link(rel='stylesheet', type='text/css', href='/frameworks/brick-1.0.4/brick-1.0.4beta.css')
+script(type='text/javascript', src='/frameworks/brick-1.0.4/brick-1.0.4beta.js')
