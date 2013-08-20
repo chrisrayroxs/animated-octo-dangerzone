@@ -1,18 +1,16 @@
 //app routes setup
 
-var index = require('../app/controllers/index'),
-user = require('../app/controllers/user'),
-dashboard = require('../app/controllers/dashboard'),
-category = require('../app/controllers/category');
+var root = require('../app/controllers/root'),
+user = require('../app/controllers/user');
 
 module.exports = function (app, auth) {
 
 	//serve root, login, logout
 	app.get('/', auth, root.serve);
-	app.post('/', auth, index.login);
+	// app.post('/', auth, index.login);
 	app.get('/user', auth, user.serve);
-	app.get('/login', auth, index.login);
-	app.get('/logout', index.logout);
+	// app.get('/login', auth, index.login);
+	// app.get('/logout', index.logout);
 
 	
 }
