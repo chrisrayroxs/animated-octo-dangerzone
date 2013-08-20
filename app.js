@@ -1,7 +1,5 @@
-/* 
-	-/--/- Nodejs-Express App Configurations -/--/-
-				-/Christopher Reynolds/-
-*/
+
+//node/express configs - christopher_reynolds
 
 //define core modules
 var express = require('express'),
@@ -31,10 +29,11 @@ app.configure('development', function() {
 });
 
 //check if user has super basic authentication --to be changed later
-var auth = express.basicAuth(function(user, pass, callback) {
-	var result = (user === 'user' && pass === 'pass');
-	callback(null /* error */ , result);
-});
+// var auth = express.basicAuth(function(user, pass, callback) {
+// 	var result = (user === 'user' && pass === 'pass');
+// 	callback(null /* error */ , result);
+// });
+var auth = true;
 
 //load routes
 require('./routes/routes')(app, auth);
