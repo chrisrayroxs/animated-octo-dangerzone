@@ -3,7 +3,7 @@ exports.serve = function (req, res) {
 	var http = require('http');
 
 	res.render('pages/root', {
-		title:'Root of animated-octo-dangerzone.'
+		title:'Welcome!'
 	});
 }
 
