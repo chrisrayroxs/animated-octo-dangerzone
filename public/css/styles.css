@@ -1,33 +1,40 @@
-/* SCAFFOLDING
-   ==================================================
-   ================================================== */
-body { background: #fff }
-@font-face {
-    font-family: "Scout";
-    src: url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-2.eot");
-    src: local('☺'), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-3.woff") format("woff"), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-1.ttf") format("truetype"), url("../fonts/5d6f6edf-0f0d-488c-98c7-1feb4fac533c-4.svg#web") format("svg");
-    font-style: normal;
-    font-weight: normal;
+@import url('thresholds/mobile.css');
+@import url('thresholds/hybrid.css');
+@import url('thresholds/desktop.css');
+@import url('fonts.css');
+
+body {
+	background: #fff;
 }
+
 a {
-    text-decoration: none;
-    text-transform: none;
+	text-decoration: none;
+	text-transform: none;
 }
 a:hover {
-    text-decoration: none;
-    text-transform: none;
+	text-decoration: none;
+	text-transform: none;
+}
+div#wrapper {
+	width: 400px;
 }
 
-
-
-
-#nav-header{
-    background-color: orange;
-    background-image: none;
-    font-size: 1.5em;
-    color: white;
+div#header {
+	background-image: url(media-queries-phone.jpg);
+	height: 93px;
+	position: relative;
 }
 
-#nav-header > *{
-    padding: .25em;
+div#header h1 {
+	font-size: 140%;
+}
+
+#content {
+	float: none;
+	width: 100%;
+}
+
+#navigation {
+	float:none;
+	width: auto;
 }
