@@ -1,0 +1,7 @@
+/* site-wide fonts */
+@font-face {
+font-family: 'OpenSans';
+src:url('fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot') format('eot'), 
+	url('fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff') format('woff'), 
+	url('fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf') format('truetype');
+}
