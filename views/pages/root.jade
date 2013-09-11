@@ -1,10 +1,49 @@
-head
+head(ng-app='myApp')
 	include ../sections/scripts
-body
 	include ../sections/header
-	
+body
 	include ../sections/navigation
+
 	.container
-	
+		
+		.content
+			div(ng-controller='MyController')
+				| {{ person.name }}
+
+			header
+				h1
+					| Creative Link Effects
+					span Subtle and modern effects for links or menu items
+				p Please note that not every browser supports transitions on pseudo elements.
+
+				img(style='-webkit-user-select: none;', src='/images/test/space1.jpg')
+				h1
+					| Example Post
+				p
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis urna ut tortor scelerisque tincidunt vitae nec dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce libero lectus, cursus in iaculis at, feugiat quis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi et urna vulputate, bibendum magna ac, pharetra diam. Curabitur magna tellus, venenatis a massa sed, aliquam adipiscing elit. Mauris lacus lacus, lobortis et velit eu, imperdiet pulvinar magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pulvinar malesuada rhoncus. Fusce fermentum dui eu turpis dictum, nec semper nulla sollicitudin. Vestibulum fermentum tincidunt sapien, vitae feugiat lorem lacinia sed. Cras orci velit, cursus eget gravida in, scelerisque quis turpis.
+				p
+					Pellentesque porttitor tincidunt felis, et placerat quam vulputate sit amet. Nam accumsan enim eget est aliquet scelerisque. Aenean vel ante massa. Cras sit amet est eget sapien aliquet varius. Nam pulvinar nunc mauris, et ullamcorper arcu imperdiet sit amet. Maecenas porttitor arcu vitae fringilla egestas. Curabitur pharetra dignissim turpis nec ornare. Etiam venenatis enim eget odio scelerisque, ac volutpat tortor fermentum. Sed leo nisl, sagittis sed magna in, dictum facilisis sem. Duis nec rhoncus quam. Aliquam non tincidunt felis. In hac habitasse platea dictumst. Donec vitae quam non justo scelerisque pharetra. Praesent eu consectetur velit. Morbi orci lorem, lacinia id sagittis nec, adipiscing ut arcu. Donec tincidunt lorem vitae felis vehicula tincidunt.
+				p
+					Phasellus at pellentesque diam, at vulputate est. Integer ornare nisi leo, vel posuere dolor vestibulum eget. Duis lacus neque, eleifend fringilla sodales at, vestibulum vitae purus. Quisque quis mollis leo. Donec accumsan nisl a ipsum fermentum aliquet. Vestibulum vulputate non lorem a hendrerit. Aliquam erat volutpat. Aliquam pharetra tincidunt dolor non viverra. Ut sed dapibus eros. Maecenas porta convallis diam, eu pretium massa rhoncus ac. Duis rhoncus, eros vel fringilla feugiat, diam ante sodales diam, quis sagittis quam est ut lacus. Praesent sagittis, risus vel sagittis condimentum, quam magna suscipit velit, vestibulum cursus ligula sapien a diam. Donec adipiscing eleifend facilisis.
+				p
+					Nulla facilisi. Donec aliquet eleifend condimentum. Vivamus hendrerit porttitor velit, sed porta purus faucibus et. Quisque nec lacus non ligula porta adipiscing vitae vitae nunc. Fusce tristique, nunc vel cursus euismod, massa quam semper lorem, sit amet varius dolor urna vel sapien. Donec nisi neque, ultricies ut elementum iaculis, iaculis ac orci. Donec sit amet pretium nunc. Ut congue odio et fringilla eleifend.
+				p
+					Duis hendrerit lobortis nisl, nec congue erat egestas id. Nunc non mauris quis leo interdum tincidunt. Morbi mollis pretium commodo. Pellentesque sed leo nec enim pellentesque eleifend vitae eget ipsum. Fusce ac rhoncus nisi. Aliquam vel accumsan diam, at luctus dolor. Mauris porta enim elit. Mauris sodales nisi quis eros ultricies, a malesuada risus tincidunt. Suspendisse gravida, mi et aliquam pharetra, dui odio vestibulum tortor, sed rutrum sapien lorem sit amet felis. Praesent nec dapibus dolor. Sed nibh tellus, hendrerit sed lacus sed, volutpat facilisis est. Fusce sit amet est nunc.
+
+				h1
+					| Look at these fucking stars
+				p
+					img(style='-webkit-user-select: none;', src='/images/test/space3.jpg')
+					img(style='-webkit-user-select: none;', src='/images/test/space4.jpg')
+				p
+					| Aren't these pretty cool? I mean there's a bunch of space out there. If only we knew all the answers... and I'm just sitting here coding.
+
+				iframe(width='560', height='315', src='//www.youtube.com/embed/Uan9DWR2n0Q', frameborder='0', allowfullscreen='allowfullscreen')
+
+
+
 
 	include ../sections/footer
+
+	//custom scripts
+	script(src='/js/angular-main.js')

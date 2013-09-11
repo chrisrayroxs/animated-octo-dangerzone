@@ -1,6 +1,9 @@
 title #{title}
-meta(charset='utf-8')
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+meta(name='viewport', content='width=device-width, initial-scale=1.0')
 meta(name='christopher reynolds app', content='a brand new app :D')
+meta(name='author', content='Codrops')
 
 //css
 link(rel='stylesheet', href='/css/styles.css')
@@ -9,15 +12,27 @@ link(rel='stylesheet', href='/css/thresholds/desktop.css')
 link(rel='stylesheet', href='/css/thresholds/mobile.css')
 link(rel='stylesheet', href='/css/thresholds/hybrid.css')
 
+//angularJS
+script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
+
 //requireJS
 script(type='text/javascript', data-main='/js/main', src='/js/require.js')
 
 //jQuery (necessary for Bootstrap's JavaScript plugins) 
 script(type='text/javascript', src='/frameworks/jquery-1.10.2/jquery-1.10.2.min.js')
 
-//Latest compiled and minified CSS 
-link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
-//Optional theme
-link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css')
-//Latest compiled and minified JavaScript 
-script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+//FlowTypeJS
+script(type='text/javascript', src='/frameworks/FlowTypeJS/flowtype.js')
+
+//Latest compiled and minified CSS/Theme/JS for Bootstrap
+link(rel='stylesheet', href='/css/bootstrap.css')
+script(src='/js/bootstrap.min.js')
+
+//creativeLinks
+script(src='/js/modernizr.custom.js')
+link(rel='stylesheet', href='/css/creativeLinks/component.css')
+//link(rel='stylesheet', href='/css/creativeLinks/normalize.css')
+
+//fontawesome
+link(href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', rel='stylesheet')
+

@@ -1,14 +1,9 @@
-extend layout-simple
+head(ng-app='myApp')
+	include ../sections/scripts
+	include ../sections/header
 block content
 	.container
-		form( method="post").form-signin
-			h2.form-signin-heading !{locals.message}
-			input.input-block-level(type='text', placeholder='Username', name="username").required
-			input.input-block-level(type='password', placeholder='Password', name="password").required
-			if fail
-				div.alert.alert-error Wrong Username or Password
-			label.checkbox
-				input(type='checkbox', value='remember-me')
-				| Remember me
-			button.btn.btn-large.btn-primary(type='submit') Sign in
+		img.fbloginimg(src='http://www.ecreativeim.com/blog/wp-content/uploads/2011/05/facebook-like-icon.png')
+
+		a.fblogin(href='/auth/facebook') Login with Facebook
 			

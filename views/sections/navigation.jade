@@ -1,39 +1,27 @@
-nav.navbar.navbar-inverse(role='navigation')
-	//
-		Brand and toggle get grouped for better mobile display 
-	.navbar-header
-		button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
-			span.sr-only Toggle navigation
-			span.icon-bar
-			span.icon-bar
-			span.icon-bar
-		a.navbar-brand(href='#') Brand
-	//
-		Collect the nav links, forms, and other content for toggling 
-	.collapse.navbar-collapse.navbar-ex1-collapse
-		ul.nav.navbar-nav
-			li.active
-				a(href='#') Link1
-			li
-				a(href='#') Link2
+#topNav
+	section.color-7
+		nav.cl-effect-21
+			a(href='/postboard') Postboard
+			a(href='/music') Music
+			a(href='/calendar') Calendar
+			a(href='/blog') Blog
+#openLeftNav
+.hiddenMenu
+	#closeLeftNav
+		a
+			i.icon-remove
+	ul.menu
+		li.menu-item(rel='0')
+			a
+				i.icon-share-alt
+		li.menu-item(rel='1')
+			a
+				i.icon-comments-alt 
+		li.menu-item(rel='2')
+			a
+				i.icon-usd
+	i.icon-pencil
+		| icon-pencil
 
-		form.navbar-form.navbar-left(role='search')
-			.form-group
-				input.form-control(type='text', placeholder='Search')
-			button.btn.btn-default(type='submit') Submit
-		ul.nav.navbar-nav.navbar-right
-			li.dropdown
-				a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Dropdown
-					b.caret
-			ul.dropdown-menu
-				li
-					a(href='#') Action
-				li
-					a(href='#') Another action
-				li
-					a(href='#') Something else here
-				li
-					a(href='#') Separated link
-	//
-		/.navbar-collapse 
+		
+

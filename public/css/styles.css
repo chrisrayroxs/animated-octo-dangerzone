@@ -1,40 +1,166 @@
+/* page styles */
+
 @import url('thresholds/mobile.css');
 @import url('thresholds/hybrid.css');
 @import url('thresholds/desktop.css');
 @import url('fonts.css');
 
-body {
-	background: #fff;
-}
-
 a {
 	text-decoration: none;
-	text-transform: none;
 }
 a:hover {
 	text-decoration: none;
-	text-transform: none;
-}
-div#wrapper {
-	width: 400px;
 }
 
-div#header {
-	background-image: url(media-queries-phone.jpg);
-	height: 93px;
+/* /////////////////////// */
+
+body {
+	color:#3B3B3B!important;
+	background-color: #fff!important;
+	font-size: 87.5%;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+
+/* nav styles */
+#topNav {
+	background-color: #3B3B3B!important;
+	color:#fff!important;
+}
+.container {
+	max-width: 1670px!important;
+}
+#leftNav {
 	position: relative;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+}
+nav {
+	border-bottom: 8px #343434 solid;
+	border-right: 8px #343434 solid;;
+	border-left: 8px #343434 solid;
+}
+#openLeftNav {
+	float: left;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 60px;
 }
 
-div#header h1 {
-	font-size: 140%;
+
+/* content style */
+.content img {
+	width:90%;
+	margin:2%;
 }
 
-#content {
-	float: none;
-	width: 100%;
+/* HiDef desktop */
+@media (min-width: 1660px) {
+	.content iframe, .content video {
+		width: 1200px;
+		height: 675px;
+	}
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+	.content iframe, .content video {
+		width: 800px;
+		height: 450px;
+	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.content iframe, .content video {
+		width: 560px;
+		height: 315px;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.content iframe, .content video {
+		width: 300;
+		height: 169px;
+	}
+}
+.content {
+	padding: 1% 10% 2% 8%;
+}
+.menu {
+    padding: 8px;
+}
+.hiddenMenu {
+	height: 100%;
+	width: 72;
+	position: absolute;
+	top: 0;
+	left: -10%;
+	overflow: hidden;
+	z-index: 1002;
+	background: #333;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#000000));
+	background: -webkit-linear-gradient(top, #000000, #333333);
+	background: -moz-linear-gradient(top, #000000, #333333);
+	background: -ms-linear-gradient(top, #000000, #333333);
+	background: -o-linear-gradient(top, #000000, #333333);
 }
 
-#navigation {
-	float:none;
-	width: auto;
+.menu-item {
+	font-size: 16px;
+	width: 50px;
+	padding: 16px 0 12px;
+	background: -moz-linear-gradient(center top , hsl(0, 0%, 0%), hsl(0, 0%, 20%)) repeat scroll 0 0 transparent;
+	border-radius: 8px 8px 8px 8px;
+	color: white!important;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	left: 0;
+	text-align: center;
+	font-weight: bold;
+	margin: 2px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.menu-item:hover {
+	background:#333;
+	color:#000;
+	font-size: 30px;
+	padding:6px 0 4px;
+}
+.menu-item * {
+	color: #FFF!important;	
+}
+.cl-effect-21 a:hover {
+	color:rgb(219, 219, 219)!important;
+}
+
+#closeLeftNav .icon-remove {
+	float:right;
+	top:0;
+	right:0;
+	color:red;
+	cursor: pointer;
+}
+.loginContainer {
+	width:100%;
+}
+.fbloginimg {
+	width:40%;
+	float:left;
+}
+.fbLogin {
+	float: left;
+	position: absolute;
+	white-space: nowrap;
+  	overflow: hidden;
+	font-size: 46px;
+	padding: 21% 5% 5% 3%;
 }
